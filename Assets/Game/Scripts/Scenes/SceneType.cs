@@ -2,8 +2,7 @@
 {
     public enum SceneType
     {
-        Menu,
-        Store,
-        PathFinding
+        Start,
+        Game
     }
 }
