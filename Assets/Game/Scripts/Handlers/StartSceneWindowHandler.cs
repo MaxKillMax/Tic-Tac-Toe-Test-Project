@@ -4,8 +4,6 @@ namespace TicTacToe
 {
     public class StartSceneWindowHandler : MonoBehaviour, IHandler
     {
-        [SerializeField] private Scenes _scenes;
-
         [SerializeField] private StartWindow _startWindow;
         [SerializeField] private SoundWindow _soundWindow;
 
@@ -29,7 +27,7 @@ namespace TicTacToe
 
         private void OpenGameScene()
         {
-            _scenes.SetScene(SceneType.Game);
+            Scenes.Instance.SetScene(SceneType.Game);
         }
 
         private void OpenSoundWindow()
